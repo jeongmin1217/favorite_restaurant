@@ -1,0 +1,182 @@
+.body {
+  margin: 0;
+  font-family:  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+}
+html {
+  overflow-x: hidden;
+}
+
+.loginbody,
+.signupbody {
+  margin: 0;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  padding-left: 180px;
+  padding-bottom: 0px;
+  margin: 0px auto;
+  width: 100vw;
+  max-width: 400px;
+  height: 90vh;
+  border-color: black;
+  border-radius: 5px;
+  float: left;
+}
+
+
+
+.auth-wrapper form {
+  width: 375px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-wrapper h1 {
+  font-weight: 1000;
+  text-align: center;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+  color: #fafafa;
+}
+
+.auth-wrapper span {
+  color: white;
+}
+
+.auth-wrapper span::before {
+  display: inline;
+  padding-top: 10px;
+  content: "";
+}
+
+.auth-wrapper input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.auth-wrapper label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 200;
+  color: #fafafa;
+}
+
+.auth-wrapper button[type="submit"],
+.auth-wrapper input[type="submit"] {
+  background: #5b63ac;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.auth-wrapper button[type="submit"]:hover,
+.auth-wrapper input[type="submit"]:hover {
+  background: #8893e4;
+}
+
+.auth-wrapper button[type="submit"]:active,
+.auth-wrapper input[type="button"]:active,
+.auth-wrapper input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.auth-wrapper input:disabled {
+  opacity: 0.4;
+}
+
+.auth-wrapper input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+.auth-wrapper button[type="submit"],
+.auth-wrapper input[type="button"],
+.auth-wrapper input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.auth-wrapper button[type="button"] {
+  display: block;
+  appearance: none;
+  background: #5b63ac;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.auth-wrapper .name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.auth-wrapper .nicknameinput {
+  display: flex;
+}
+
+.auth-wrapper #nicknameCheck {
+  position: relative;
+}
+
+.auth-wrapper #nicknameCheck__error {
+  display: inline;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.auth-wrapper hr {
+  margin-top: 30px;
+}
+
+.auth-wrapper button {
+  display: block;
+  appearance: none;
+  margin-top: 40px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
