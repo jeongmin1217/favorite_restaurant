@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/home/login.css" />
+    <link rel="stylesheet" href="/css/home/register.css" />
     <script src="/js/home/login.js" defer></script>
     <title>Document</title>
   </head>
@@ -20,11 +20,15 @@
         </form> -->
         <form class="login-form">
           <input id="id" type="text" placeholder="아이디" />
+          <input id="name" type="text" placeholder="이름" />
           <input id="password" type="password" placeholder="비밀번호" />
-          <button>LOGIN</button>
-          <p class="message">
-            계정이 없으신가요? <a href="/register">회원가입</a>
-          </p>
+          <input
+            id="confirm-password"
+            type="password"
+            placeholder="비밀번호 확인"
+          />
+          <button>SIGN UP</button>
+          <p class="message">계정이 있으신가요? <a href="/login">로그인</a></p>
         </form>
       </div>
     </div>
