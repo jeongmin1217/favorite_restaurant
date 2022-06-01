@@ -17,10 +17,17 @@ const output = {
 };
 
 const process = {
-    login: (req, res) => {
+    login: async (req, res) => {
         const user = new User(req.body);
-        const response = user.login();
+        const response = await user.login();
         return res.json(response);
+    },
+
+    register: async (req, res) => {
+        const user = new User(req.body);
+        const response = await user.register();
+        return res.json(response);
+    },
         // const id = req.body.id,
         //     password = req.body.password;
         // const users = UserStorage.getUsers("id", "password");
@@ -38,7 +45,6 @@ const process = {
         // response.success = false;
         // response.msg = "로그인에 실패하였습니다."
         // return res.json(response); 
-    },
 };
 
 module.exports = {
