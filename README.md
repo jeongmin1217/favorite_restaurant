@@ -14,7 +14,9 @@
 ![mysql-2.18.1](https://img.shields.io/badge/Mysql-2.18.1-yellowgreen)
 ![AWS_RDS](https://img.shields.io/badge/AWS_RDS-yellowgreen)
 
-<p align="center"><img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png" width="300" height="300"></p>
+<div align="center">
+<img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png" width="300" height="300">
+</div>
 
 
 
