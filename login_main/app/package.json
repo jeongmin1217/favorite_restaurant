@@ -26,10 +26,12 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon ./bin/www.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node index.js",
+    "prod": "NODE_ENV=production node index.js"
   },
-  "author": "",
+  "author": "Jeongmin Seo, Jumi Yang",
   "license": "ISC",
   "keywords": [],
-  "description": ""
+  "description": "Node.js API Server"
 }

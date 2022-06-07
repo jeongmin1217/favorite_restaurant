@@ -10,15 +10,13 @@ const compression = require("compression");
 const methodOverride = require("method-override");
 var cors = require("cors");
 const { logger } = require("./src/config/winston");
-
+//app이라는 express 객체 생성
 const app = express();
 //라우팅
 const home = require("./src/routes/home");
 
 const port = 3000;
 
-//controller갖고있는 모듈 생성
-// const index = require("../controllers/indexController");
 const jwtMiddleware = require("./src/config/jwtMiddleware");
 
 // 앱 세팅

@@ -3,13 +3,16 @@
 const express = require("express");
 const router = express.Router();
 // const index = require("../../controllers/indexController");
+const jwtMiddleware = require("../../config/jwtMiddleware");
+const Restaurant = require("../../models/Restaurant");
 
 const ctrl = require("./home.ctrl");
 
 router.get("/", ctrl.output.hello);
 router.get("/login", ctrl.output.login);
 router.get("/register", ctrl.output.register);
-router.get("/restaurants", ctrl.output.restaurants);
+router.get("/restaurants", Restaurant.readRestaurants);
+// router.get("/restaurants", ctrl.output.restaurants);
 
 router.post("/login", ctrl.process.login);
 router.post("/register", ctrl.process.register);

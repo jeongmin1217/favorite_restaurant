@@ -16,9 +16,9 @@ const output = {
         res.render("home/register");
     },
 
-    restaurants: (req, res) => {
-        res.render("home/restaurants");
-    }
+    // restaurants: (req, res) => {
+    //     res.render("home/restaurants");
+    // }
 };
 
 const process = {
