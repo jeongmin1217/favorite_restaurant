@@ -13,8 +13,8 @@
   <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <br>
 </div>
-<div align="center">
-<img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png"  width="300" height="300">
+<p align="center"><img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png" width="300" height="300"></p>
+
 </div>
 
 
