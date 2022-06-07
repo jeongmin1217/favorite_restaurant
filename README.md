@@ -2,7 +2,6 @@
 카카오맵 API와 실시간 채팅 기능을 통해 사용자들과 소통함으로써 맛집에 대한 정보를 얻을 수 있는 플랫폼입니다.
 
 ### 📚 STACKS
-<div align="center">
 ![node-16.14.2](https://img.shields.io/badge/Node-16.14.2-green)
 ![express-4.18.1](https://img.shields.io/badge/Express-4.18.1-green)
 ![html-latest](https://img.shields.io/badge/html-5.2-green)
@@ -14,7 +13,6 @@
      
 ![mysql-2.18.1](https://img.shields.io/badge/Mysql-2.18.1-yellowgreen)
 ![AWS_RDS](https://img.shields.io/badge/AWS_RDS-yellowgreen)
-</div>
 
 <div align="center">
     <img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png" width="300" height="300">
