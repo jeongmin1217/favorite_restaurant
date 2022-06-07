@@ -3,20 +3,21 @@
 
 ### 📚 STACKS
 <div align="center">
-![node-16.14.2](https://img.shields.io/badge/Node-16.14.2-green) ![express-4.18.1](https://img.shields.io/badge/Express-4.18.1-green)
-![html-latest](https://img.shields.io/badge/html-5.2-green)
-![css-latest](https://img.shields.io/badge/css-3-green)
-
-![nginx-latest](https://img.shields.io/badge/nginx-latest-blue)
-![socket.io-latest](https://img.shields.io/badge/socket.io-latest-blue)
-![AWS_RDS](https://img.shields.io/badge/AWS_RDS-blue)
- 
-![mysql-2.18.1](https://img.shields.io/badge/Mysql-2.18.1-yellowgreen)
-![AWS_RDS](https://img.shields.io/badge/AWS_RDS-yellowgreen)
+    ![node-16.14.2](https://img.shields.io/badge/Node-16.14.2-green)
+    ![express-4.18.1](https://img.shields.io/badge/Express-4.18.1-green)
+    ![html-latest](https://img.shields.io/badge/html-5.2-green)
+    ![css-latest](https://img.shields.io/badge/css-3-green)
+    
+    ![nginx-latest](https://img.shields.io/badge/nginx-latest-blue)
+    ![socket.io-latest](https://img.shields.io/badge/socket.io-latest-blue)
+    ![AWS_RDS](https://img.shields.io/badge/AWS_RDS-blue)
+     
+    ![mysql-2.18.1](https://img.shields.io/badge/Mysql-2.18.1-yellowgreen)
+    ![AWS_RDS](https://img.shields.io/badge/AWS_RDS-yellowgreen)
 </div>
 
 <div align="center">
-<img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png" width="300" height="300">
+    <img src="/uploads/f2c62af097272859d8f37acda908d6aa/그림1.png" width="300" height="300">
 </div>
 
 
