@@ -14,7 +14,6 @@ class User {
         const client = this.body;
           
         try {
-            const connection = await pool.getConnection(async (conn) => conn);
             try {
                 const {id, password} = await UserStorage.getUserInfo(connection, client.id);
                 // console.log(id, password);
@@ -39,19 +38,19 @@ class User {
  
     async register() {
         const client = this.body;
-
         try {
             const connection = await pool.getConnection(async (conn) => conn);
+            // console.log(client);
             try {
                 const response = await UserStorage.save(connection, client);
-                // console.log(response);
+                // console.log("테스트2 : ", response);
                 return response;
-                } catch (err) {
-
-                    return {success: false, msg : err};
-                } finally {
-                    connection.release();
-                }
+            } catch (err) {
+                console.log(err);
+                return {success: false, msg : err};
+            } finally {
+                connection.release();
+            }
         } catch (err) {
             logger.error(`usersaving DB Connection error\n: ${JSON.stringify(err)}`);
             return false;

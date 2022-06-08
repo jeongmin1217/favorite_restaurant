@@ -8,7 +8,7 @@ const id = document.querySelector("#id"),
 
 registerBtn.addEventListener("click", register);
 
-function register() {
+async function register() {
     if(!id.value) {
         return alert("아이디를 입력해주세요.")
     }
@@ -27,28 +27,23 @@ function register() {
     }
 
     const req = {
-        id : id.value,
-        name : name.value,
-        password : password.value,
+        id: id.value,
+        name: name.value,
+        password: password.value,
     };
 
-    fetch("/register", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(req),
-    })
-        .then((res) => res.json())
-        .then((res) => {
-            if (res.success) {
-                //성공하면 이동
-                location.href = "/login";
-            } else {
-                alert(res.msg);
-            }
-        })
-        .catch((err) => {
-            console.error("회원가입 중 에러 발생");
+    console.log("id : ", req.id);
+    try {
+        const response = await fetch("/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(req),
         });
+        console.log("테스트 : ", response);
+    } catch(e) {
+        console.log(e);
+    }
+
 }
