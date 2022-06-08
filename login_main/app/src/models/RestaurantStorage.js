@@ -1,6 +1,7 @@
 'use strict';
 //for DB CRUD
-const pool = require("../config/db");
+// const db = require("../config/db");
+const { pool } = require("../config/db");
 
 exports.selectRestaurants = async function (connection, category) {
 
@@ -16,5 +17,3 @@ exports.selectRestaurants = async function (connection, category) {
         return rows;
     
 }
-
-    

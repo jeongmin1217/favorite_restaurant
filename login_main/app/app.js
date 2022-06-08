@@ -31,6 +31,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride());
 app.use(cors());
+// app.use("/restaurants", require("../app/src/routes/home/restaurant.route"));
+require("../app/src/routes/home/restaurant.route")(app);
 
 app.use("/", home); //미들웨어 등록해주는 method
 logger.info(`${process.env.NODE_ENV} - API Server Start At Port ${port}`);

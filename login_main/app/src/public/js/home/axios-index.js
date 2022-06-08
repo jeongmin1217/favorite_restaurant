@@ -18,23 +18,41 @@
   * 2. 데이터 준비하기(제목, 주소, 카테고리)
   */
 
- async function getDataSet(category) {
-  let qs = category;
-  if(!qs) {
-    qs = "";
+const dataSet = [
+  {
+    title: "희락돈까스",
+    address: "서울 영등포구 양산로 210",
+    category: "양식",
+  },
+  {
+    title: "즉석우동짜장",
+    address: "서울 영등포구 대방천로 260",
+    category: "한식",
+  },
+  {
+    title: "아카사카",
+    address: "서울 서초구 서초대로74길 23",
+    category: "일식",
   }
+];
 
-  const dataSet = await axios({
-    method: "get", // http method
-    url: `http://localhost:3000/restaurants?category=${qs}`,
-    headers: {},
-    data: {},
-  });
+//  async function getDataSet(category) {
+//   let qs = category;
+//   if(!qs) {
+//     qs = "";
+//   }
 
-  return dataSet.data.result;
- }
+//   const dataSet = await axios({
+//     method: "get", // http method
+//     url: `http://localhost:3000/restaurants?category=${qs}`,
+//     headers: {},
+//     data: {},
+//   });
+
+//   return dataSet.data.result;
+//  }
  
- getDataSet();
+//  getDataSet();
  
  /******************************************************************************
   * 3. 여러개 마커찍기
@@ -176,14 +194,16 @@
    }
  }
 
- async function setting() {
-  try {
-    const dataSet = await getDataSet();
-    setMap(dataSet);
-    
-  } catch (error) {
-    console.error(error);
-  } 
- }
+ setMap(dataSet);
 
- setting();
+//  async function setting() {
+//   try {
+//     const dataSet = await getDataSet();
+//     setMap(dataSet);
+    
+//   } catch (error) {
+//     console.error(error);
+//   } 
+//  }
+
+//  setting();

@@ -1,7 +1,7 @@
 "use strict";
 
 const User = require("../../models/User");
-const Restaurant = require("../../models/Restaurant");
+// const Restaurant = require("../../models/Restaurant");
 
 const output = {
     hello: (req, res) => {

@@ -2,7 +2,7 @@
 //for DB manipulate
 const RestaurantStorage = require("./RestaurantStorage");
 
-const { pool } = require("../config/db");
+const {pool} = require("../config/db");
 const { logger } = require("../config/winston");
 const jwt = require("jsonwebtoken");
 
