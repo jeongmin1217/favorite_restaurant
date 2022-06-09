@@ -79,19 +79,19 @@ src="//dapi.kakao.com/v2/maps/sdk.js?appkey=이곳에API키를입력해주세요
 
 ### Installation
 
-1. Clone the repository
+Step1. Clone the repository
 
 ```
 git clone -b master --single-branch http://khuhub.khu.ac.kr/2018100910/favorite_restaurant.git
 ```
 
-2. Make secret file (.env) and put your Kakao API key
+Step2. Make secret file (.env) and put your Kakao API key
 
 ```
 favorite-restaurant/app/.env
 ```
 
-3. Installation
+Step3. Installation
 
 ```
 npm install
@@ -102,7 +102,7 @@ npm install moment
 npm install
 ```
 
-4. Run
+Step4. Run
 
 ```
 npm start
