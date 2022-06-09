@@ -44,7 +44,7 @@
 
   const dataSet = await axios({
     method: "get", // http method
-    url: `http://localhost:3000/restaurants?category=${qs}`,
+    url: `http://52.54.201.217:3000/restaurants?category=${qs}`,
     headers: {},
     data: {},
   });

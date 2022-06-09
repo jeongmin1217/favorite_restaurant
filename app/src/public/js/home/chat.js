@@ -1,6 +1,6 @@
 "use strict";
 
-const socket = io.connect("http://localhost:3000/", {
+const socket = io.connect("http://52.54.201.217:3000/", {
   transports: ["websocket"],
 });
 const nickname = document.querySelector("#nickname")
