@@ -4,8 +4,8 @@
 
  var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
  var options = { //지도를 생성할 때 필요한 기본 옵션
-     center: new kakao.maps.LatLng(37.54, 126.96), //지도의 중심좌표.
-     level: 7 //지도의 레벨(확대, 축소 정도)
+     center: new kakao.maps.LatLng(37.248, 127.08), //지도의 중심좌표.
+     level: 4 //지도의 레벨(확대, 축소 정도)
  };
  
  var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
@@ -18,41 +18,44 @@
   * 2. 데이터 준비하기(제목, 주소, 카테고리)
   */
 
-const dataSet = [
-  {
-    title: "희락돈까스",
-    address: "서울 영등포구 양산로 210",
-    category: "양식",
-  },
-  {
-    title: "즉석우동짜장",
-    address: "서울 영등포구 대방천로 260",
-    category: "한식",
-  },
-  {
-    title: "아카사카",
-    address: "서울 서초구 서초대로74길 23",
-    category: "일식",
-  }
-];
-
-//  async function getDataSet(category) {
-//   let qs = category;
-//   if(!qs) {
-//     qs = "";
+// const dataSet = [
+//   {
+//     title: "희락돈까스",
+//     address: "서울 영등포구 양산로 210",
+//     category: "양식",
+//   },
+//   {
+//     title: "즉석우동짜장",
+//     address: "서울 영등포구 대방천로 260",
+//     category: "한식",
+//   },
+//   {
+//     title: "아카사카",
+//     address: "서울 서초구 서초대로74길 23",
+//     category: "일식",
 //   }
+// ];
 
-//   const dataSet = await axios({
-//     method: "get", // http method
-//     url: `http://localhost:3000/restaurants?category=${qs}`,
-//     headers: {},
-//     data: {},
-//   });
+ async function getDataSet(category) {
+  let qs = category;
+  if(!qs) {
+    qs = "";
+  }
 
-//   return dataSet.data.result;
+  const dataSet = await axios({
+    method: "get", // http method
+    url: `http://localhost:3000/restaurants?category=${qs}`,
+    headers: {},
+    data: {},
+  });
+  // console.log(dataSet);
+  
+  return dataSet.data.result;
+}
+
 //  }
  
-//  getDataSet();
+ getDataSet();
  
  /******************************************************************************
   * 3. 여러개 마커찍기
@@ -75,7 +78,7 @@ const dataSet = [
    });
  }
  
- setMap(dataSet);
+//  setMap(dataSet);
  
  /* 
  *************************************************************
@@ -170,6 +173,7 @@ const dataSet = [
    const categoryId = event.target.id;
    const category = categoryMap[categoryId];
   
+
    try {
     // 데이터 분류
     let categorizedDataSet = await getDataSet(category);
@@ -194,16 +198,13 @@ const dataSet = [
    }
  }
 
- setMap(dataSet);
+ async function setting() {
+  try {
+    const dataSet = await getDataSet();
+    setMap(dataSet);
+  } catch (error) {
+    console.error(error);
+  } 
+ }
 
-//  async function setting() {
-//   try {
-//     const dataSet = await getDataSet();
-//     setMap(dataSet);
-    
-//   } catch (error) {
-//     console.error(error);
-//   } 
-//  }
-
-//  setting();
+ setting();

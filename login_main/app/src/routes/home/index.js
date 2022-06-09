@@ -12,6 +12,7 @@ router.get("/", ctrl.output.hello);
 router.get("/login", ctrl.output.login);
 router.get("/register", ctrl.output.register);
 router.get("/restaurants", index.readRestaurants);
+router.get("/chat", ctrl.output.chat);
 // router.get("/restaurants", Restaurant.restaurants);
 // router.get("/restaurants", ctrl.output.restaurants);
 

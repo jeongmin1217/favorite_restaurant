@@ -1,5 +1,12 @@
-"use strict"
-const socket = io.connect("http://localhost:3000/", {transports:['websocket']});
+"use strict";
+
+const socketIO = require("socket.io");
+const http = require("http");
+const app = express();
+const server = http.createServer(app);
+const io = socketIO(server);
+const socket = io();
+//.connect("http://localhost:3000/chat", {transports:['websocket']});
 
 const nickname = document.querySelector("#nickname")
 const chatlist = document.querySelector(".chatting-list")

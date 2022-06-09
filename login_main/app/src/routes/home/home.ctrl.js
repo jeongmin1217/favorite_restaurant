@@ -16,6 +16,10 @@ const output = {
         res.render("home/register");
     },
 
+    chat: (req, res) => {
+        res.render("home/chat");
+    },
+
     // restaurants: (req, res) => {
     //     res.render("home/restaurants");
     // }

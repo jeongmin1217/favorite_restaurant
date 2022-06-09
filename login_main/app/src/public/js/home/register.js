@@ -25,14 +25,11 @@ async function register() {
         return alert("비밀번호가 일치하지 않습니다.")
     }
     
-    console.log(1);
     const req = {
         id: id.value,
         name: name.value,
         password: password.value,
     };
-
-    console.log("여기 안찍히나????");
 
     fetch("/register", {
         method: "POST",
