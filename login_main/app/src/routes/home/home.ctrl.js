@@ -16,6 +16,13 @@ const output = {
         res.render("home/register");
     },
 
+<<<<<<< HEAD
+=======
+    chat: (req, res) => {
+        res.render("home/chat");
+    },
+
+>>>>>>> release_v0.2.0
     // restaurants: (req, res) => {
     //     res.render("home/restaurants");
     // }
@@ -31,6 +38,10 @@ const process = {
     register: async (req, res) => {
         const user = new User(req.body);
         const response = await user.register();
+<<<<<<< HEAD
+=======
+        // console.log("req.body", req.body);
+>>>>>>> release_v0.2.0
         // console.log(res.json(response));
         // console.log(res.json(response).statusCode); => 이거도 잘 찍혔음.
         return res.json(response);

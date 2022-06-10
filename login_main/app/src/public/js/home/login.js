@@ -12,6 +12,10 @@ function login() {
         password : password.value,
     };
 
+<<<<<<< HEAD
+=======
+    // console.log("login value : ", id.value);
+>>>>>>> release_v0.2.0
     fetch("/login", {
         method: "POST",
         headers: {

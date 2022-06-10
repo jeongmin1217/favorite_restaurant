@@ -13,6 +13,7 @@ class UserStorage {
     
     // static getUsers(isAll, ...fields) {}
     static async getUserInfo(connection, id) {
+<<<<<<< HEAD
         return new Promise((resolve, reject) => {
             const query = "SELECT * FROM users WHERE id = ?;";
             connection.query(query, [id], (err, data) => {
@@ -23,6 +24,20 @@ class UserStorage {
             });
         });
     }
+=======
+        const query = `SELECT * FROM users WHERE id = '${id}';`;
+        console.log(query);
+        let [row] = await connection.query(query);
+        console.log(row[0]);
+        return row[0];
+        //     , [id], (err, data) => {
+        //   console.log("44444444");
+        //   if (err) reject(`${err}`);
+        //   resolve(data[0]);
+        //   pool.releaseConnection(conn);
+        // });
+      }
+>>>>>>> release_v0.2.0
 
     static async save (connection, userInfo) {
         const query = "INSERT INTO users(id, name, password) VALUES(?, ?, ?);";

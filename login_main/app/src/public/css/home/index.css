@@ -40,7 +40,11 @@
     cursor: pointer;
     font-family: inherit;
     color :lightslategray;
+<<<<<<< HEAD
     margin-right: 30px;
+=======
+    margin-right: 0px;
+>>>>>>> release_v0.2.0
   }
   
   .category-title {
