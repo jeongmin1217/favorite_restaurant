@@ -13,8 +13,8 @@
 ![html-latest](https://img.shields.io/badge/html-5.2-green)
 ![css-latest](https://img.shields.io/badge/css-3-green)
 
-![nginx-latest](https://img.shields.io/badge/nginx-latest-blue)
-![socket.io-latest](https://img.shields.io/badge/socket.io-latest-blue)
+![nginx-1.14.0](https://img.shields.io/badge/nginx-1.14.0-blue)
+![socket.io-6.14.13](https://img.shields.io/badge/socket.io-6.14.13-blue)
 ![AWS_EC2](https://img.shields.io/badge/AWS_EC2-blue)
 
 ![mysql-2.18.1](https://img.shields.io/badge/Mysql-2.18.1-yellowgreen)
@@ -26,7 +26,7 @@
 - 메인 화면에서는 지역별 맛집정보를 파악할 수 있습니다.
 - 실시간 채팅을 통해 타 유저들과 해당 음식점의 실시간 정보를 빠르게 공유할 수 있습니다.
 - 다음의 주소를 통해 플랫폼 이용이 가능합니다.
-  http://52.54.201.217:3000/login
+- http://52.54.201.217:3000/login
 
 ### Overview
 
@@ -73,7 +73,7 @@ Need to fix kakaomap API key
 - favorite-restaurant/app/src/view/home/index.ejs
 
 ```
-#Line number 50
+# Line number 50
 src="//dapi.kakao.com/v2/maps/sdk.js?appkey=이곳에API키를입력해주세요&libraries=services"
 
 ```
@@ -83,13 +83,16 @@ src="//dapi.kakao.com/v2/maps/sdk.js?appkey=이곳에API키를입력해주세요
 Step1. Clone the repository
 
 ```
-git clone -b master --single-branch http://khuhub.khu.ac.kr/2018100910/favorite_restaurant.git
+git clone http://khuhub.khu.ac.kr/2018100910/favorite_restaurant.git
 ```
 
-Step2. Make secret file (.env) and put your Kakao API key
+Step2. Make secret file (.env) and put your Kakao API key which mentioned above
 
 ```
-favorite-restaurant/app/.env
+# favorite-restaurant/app/.env
+cd favorite_restaurant
+cd app
+vi .env
 ```
 
 Step3. Installation
@@ -100,7 +103,6 @@ npm -g install nodemon
 npm install express
 npm install socket.io
 npm install moment
-npm install
 ```
 
 Step4. Run
@@ -114,8 +116,14 @@ npm start
 - [x] 1. 로그인/회원가입 UI 및 기능 구현
 - [x] 2. 맛집지도 UI 및 기능 구현
 - [x] 3. socket.io를 이용한 실시간 채팅 구현
-- [x] 4. AWS, Mysql을 이용한 데이터베이스 구축
+- [x] 4. AWS RDS, Mysql을 이용한 데이터베이스 구축
 - [x] 5. 서버 구축 및 배포
+
+## To-do
+
+- [o] 1. 채팅방 데이터베이스 구축
+- [o] 2. 음식점 데이터 크롤링
+- [o] 3. 평점 데이터 크롤링을 통한 맛집 목록 구축
 
 ## Contributing
 
