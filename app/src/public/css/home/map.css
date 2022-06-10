@@ -1,0 +1,21 @@
+/*인포윈도우 설정*/
+.infowindow {
+    width : 25rem;
+    border : 1px solid black;
+    border-radius: 5px;
+    background-color : white;
+}
+
+.infowindow-title {
+    font-size: 15px;
+    color: rebeccapurple;
+    font-weight: 600;
+}
+
+.infowindow-address {
+    font-size: 8px;
+}
+
+.infowindow-btn {
+    font-size: 8px;
+}
