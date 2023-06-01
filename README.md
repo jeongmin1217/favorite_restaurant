@@ -33,7 +33,7 @@
 ### Project Architecture
 
 <div align="center">
-    <img src="/uploads/af7ba588e17279d3f7713b5bf3662f66/아키텍처.png">
+    <img src="https://github.com/jeongmin1217/favorite_restaurant/blob/main/architecture.png">
 </div>
 
 ### Built With
