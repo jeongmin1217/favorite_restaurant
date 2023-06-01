@@ -2,10 +2,6 @@
 
 카카오맵 API와 실시간 채팅 기능을 통해 사용자들과 소통함으로써 맛집에 대한 정보를 얻을 수 있는 플랫폼입니다.
 
-<div align="center">
-    <img src="/uploads/6f062fddb950cee4e27b99e9f337ebbf/로고.png" width="300" height="300">
-</div>
-
 ### 📚 STACKS
 
 ![node-16.14.2](https://img.shields.io/badge/Node-16.14.2-green)
